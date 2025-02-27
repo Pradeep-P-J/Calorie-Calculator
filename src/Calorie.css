@@ -1,0 +1,156 @@
+
+.App {
+    padding: 20px;
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 200px;
+    right: 300px;   
+  }
+
+  img {
+    width: 250px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #249acd;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(23, 133, 193);
+    border-radius: 20px;
+  }
+
+  .food-list {
+    background-color: rgb(23, 133, 193);
+    /* border: 1px solid black; */
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .food-list h2 {
+    padding-bottom: 20px;
+    color: gold;
+  }
+
+  .add-food h2 {
+    padding-bottom: 20px;
+    color: gold;
+  }
+
+  .selected-foods h2 {
+    padding-bottom: 20px;
+    color: gold;
+    position: absolute;
+    top: 80px;
+    display: flex;
+    padding: 20px;
+  }
+
+  .selected-foods h3 {
+    padding-bottom: 20px;
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 300px;
+    left: 360px;
+    display: flex;
+    padding: 20px;
+  }
+
+  .food-list, .add-food, .selected-foods {
+    width: 30%;
+    margin-right: 2%;
+    padding: 20px;
+  }
+  
+  .food-list ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .food-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 260px;
+    color: #1b9cd7;
+  }
+  
+  .food-item input {
+    width: 90px;
+    padding: 6px;
+    font-size: 14px;
+  }
+  
+  .add-food input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  .add-food button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .add-food button:hover {
+    background-color: #45a049;
+  }
+  
+  .selected-foods ul {
+    list-style: none;
+    margin-top: 57px;
+    padding-left: 0;
+  }
+  
+  .selected-foods li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  
+  .selected-foods h3 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .food-list, .add-food, .selected-foods {
+      width: 100%;
+      margin-right: 0;
+    }
+  }
+  

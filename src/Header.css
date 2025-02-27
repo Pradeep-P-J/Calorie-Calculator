@@ -1,0 +1,51 @@
+.Home {
+    text-align: center;
+    padding: 30px;
+    background-color: #329bf1;
+    position: absolute;
+    top: -220px;
+    right: 10px;
+    width: 900px;
+    max-width: 100%;
+  }
+  .myfit {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e4d22f;
+    padding: 10px;
+    position: absolute;
+    top: 2px;
+    right: 3px;
+  }
+  
+  .nutrition h4 {
+    padding: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .nutrition h1 {
+    font-size: 36px;
+    color: #333;
+  }
+  
+  .nutrition span {
+    color: #ffffff;
+    background-color: #ef0404;
+  }
+  
+  p {
+    font-size: 18px;
+    color: rgb(71, 70, 62);
+  }
+  
+  img {
+    margin-top: 20px;
+    width: 270px;
+    max-width: 400px;
+    height: 500px;
+    position: absolute;
+    left: 200px;
+    top: 180px;
+  }
+  
