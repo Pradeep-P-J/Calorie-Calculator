@@ -757,5 +757,52 @@ const App = () => {
     </Router>
   );
 };
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  return (
+    <Router>
+      <Routes>
+        {/* Public Routes */}
+        <Route 
+          path="/login" 
+          element={<LoginPage setIsLoggedIn={setIsLoggedIn} />} 
+        />
+        <Route 
+          path="/signup" 
+          element={<SignUpPage />} 
+        />
+        <Route 
+          path="/forgot-password" 
+          element={<ForgotPasswordPage />} 
+        />
+
+        {/* Protected Routes */}
+        <Route 
+          path="/calorie-counter" 
+          element={
+            isLoggedIn ? (
+              <CalorieCounterPage />
+            ) : (
+              <Navigate to="/login" replace />
+            )
+          } 
+        />
+
+        {/* Redirect root to login page */}
+        <Route 
+          path="/" 
+          element={<Navigate to="/login" replace />} 
+        />
+
+        {/* Catch-all route for 404 */}
+        <Route 
+          path="*" 
+          element={<Navigate to="/login" replace />} 
+        />
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
